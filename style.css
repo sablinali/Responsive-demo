@@ -23,6 +23,17 @@ nav {
     justify-content: right;
 }
 
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+li{
+    text-decoration: none;
+}
+
 nav a{
     color: white;
     padding: 15px;
@@ -31,20 +42,27 @@ nav a{
 
 .row{
     display: flex;
-    height: 100vh
+    height: 140vh;
+    justify-content: center;
+   
 }
 
-aside{
+.first{
     display: flex;
     flex-basis: 50%;
     background-color: beige;
     padding: 20px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     
 }
 
-section{
+h2{
+    text-align: center;
+}
+
+.second{
     display: flex;
     flex-basis: 50%;
     background-color: khaki;
@@ -54,17 +72,28 @@ section{
     align-items: center;
 }
 
+.photo-one{
+    width: 300px;
+    border-radius: 25px;
+}
+
+.photo-two{
+    width: 300px;
+    border-radius: 25px;
+}
+
 footer{
     flex-grow: 1;
     text-align: center;
     background-color: palevioletred;
+    padding-top: 10px;
 }
 
 /*this is the mobile version*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
    nav, .row{
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 0, 157);
+    background-color: rgb(240, 93, 184);
    } 
 }
