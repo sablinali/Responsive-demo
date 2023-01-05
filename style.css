@@ -9,18 +9,21 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: 100vw;
   
 }
 header {
-    padding: 45px;
+    padding: 50px;
     background-color: blueviolet;
     text-align: center;
 }
 
-nav {
+nav{
     display: flex;
     background-color: rgb(234, 176, 186);
+    flex-direction:column;
     justify-content:center;
+    align-items: center;
 }
 
 ul{
@@ -36,9 +39,13 @@ li{
 }
 
 nav a{
-    color: rgb(65, 64, 64);
     padding: 15px;
     text-decoration: none;
+}
+
+.videos-container{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .row{
@@ -46,6 +53,10 @@ nav a{
     height: 160vh;
     justify-content: center;
    
+}
+
+h2{
+    font-size: 30px;
 }
 
 .first{
@@ -57,10 +68,6 @@ nav a{
     justify-content: center;
     align-items: center;
     
-}
-
-h2{
-    text-align: center;
 }
 
 .second{
@@ -84,10 +91,11 @@ h2{
 }
 
 footer{
-    /* flex-grow: 1; */
+    flex-grow: 1;
     text-align: center;
     background-color: rgb(177, 97, 124);
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 /*this is the mobile version*/
